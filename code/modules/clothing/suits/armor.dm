@@ -15,11 +15,11 @@
 	icon_state = "armoralt"
 	item_state = "armoralt"
 	blood_overlay_type = "armor"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 30, laser = 40, energy = 10, bomb = 25, bio = 0, rad = 0)
 	dog_fashion = /datum/dog_fashion/back
 
 /obj/item/clothing/suit/armor/vest/alt
-	desc = "An armored vest that protects against most types of damage."
+	desc = "An armored vest that protects against most types of damage. Made of a different yet similarly protective material."
 	icon_state = "armor"
 	item_state = "armor"
 
@@ -29,10 +29,10 @@
 	icon_state = "hos"
 	item_state = "greatcoat"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 55, bullet = 45, laser = 50, energy = 20, bomb = 30, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
-	cold_protection = CHEST|GROIN|LEGS|ARMS
-	heat_protection = CHEST|GROIN|LEGS|ARMS
+	cold_protection = CHEST|GROIN|LEGS|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	strip_delay = 80
 
 /obj/item/clothing/suit/armor/hos/trenchcoat
@@ -66,8 +66,8 @@
 	icon_state = "leathercoat-sec"
 	item_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	cold_protection = CHEST|GROIN|LEGS|ARMS
-	heat_protection = CHEST|GROIN|LEGS|ARMS
+	cold_protection = CHEST|GROIN|LEGS|ARMS|HANDS
+	heat_protection = CHEST|GROIN|LEGS|ARMS|HANDS
 	dog_fashion = null
 
 /obj/item/clothing/suit/armor/vest/capcarapace
@@ -76,7 +76,7 @@
 	icon_state = "capcarapace"
 	item_state = "armor"
 	body_parts_covered = CHEST|GROIN
-	armor = list(melee = 50, bullet = 40, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 60, bullet = 45, laser = 60, energy = 25, bomb = 35, bio = 0, rad = 0)
 	dog_fashion = null
 
 /obj/item/clothing/suit/armor/vest/capcarapace/alt
@@ -93,7 +93,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list(melee = 50, bullet = 10, laser = 10, energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 75, bullet = 10, laser = 10, energy = 10, bomb = 0, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
 	strip_delay = 80
 	put_on_delay = 60
@@ -104,7 +104,7 @@
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
 	blood_overlay_type = "armor"
-	armor = list(melee = 35, bullet = 25, laser = 25, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 20, laser = 10, energy = 10, bomb = 5, bio = 0, rad = 0)//Good at melee, shit at other things
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 
 /obj/item/clothing/suit/armor/chitinplate
@@ -113,7 +113,7 @@
 	icon_state = "chitenplate"
 	item_state = "chitenplate"
 	blood_overlay_type = "armor"
-	armor = list(melee = 65, bullet = 35, laser = 15, energy = 10, bomb = 35, bio = 0, rad = 0)
+	armor = list(melee = 50, bullet = 10, laser = 15, energy = 10, bomb = 10, bio = 0, rad = 0)//Great at melee, shit at other things
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 
 /obj/item/clothing/suit/armor/pathfinder
@@ -132,17 +132,17 @@
 	icon_state = "bulletproof"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list(melee = 15, bullet = 80, laser = 10, energy = 10, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 95, laser = 10, energy = 10, bomb = 55, bio = 0, rad = 0)//since it doesn't protect the legs and arms, some extra chest protection is good
 	strip_delay = 70
 	put_on_delay = 50
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "reflector vest"
-	desc = "A vest that excels in protecting the wearer against energy projectiles, as well as occasionally reflecting them."
+	desc = "A vest that excels in protecting the wearer against energy projectiles, as well as occasionally reflecting them. Do not expose to radioactive particles!"
 	icon_state = "armor_reflec"
 	item_state = "armor_reflec"
 	blood_overlay_type = "armor"
-	armor = list(melee = 10, bullet = 10, laser = 60, energy = 50, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 85, energy = 60, bomb = 0, bio = 0, rad = -20)//does NOT take well to radiation, shit bounces around inside you
 	var/hit_reflect_chance = 40
 
 /obj/item/clothing/suit/armor/laserproof/IsReflect(def_zone)
@@ -170,7 +170,7 @@
 	icon_state = "reactiveoff"
 	item_state = "reactiveoff"
 	blood_overlay_type = "armor"
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 20, energy = 0, bomb = 0, bio = 0, rad = 50)
 	actions_types = list(/datum/action/item_action/toggle)
 	unacidable = 1
 	hit_reaction_chance = 50
@@ -356,7 +356,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
-	armor = list(melee = 80, bullet = 80, laser = 50, energy = 50, bomb = 100, bio = 100, rad = 100)
+	armor = list(melee = 100, bullet = 80, laser = 70, energy = 70, bomb = 100, bio = 100, rad = 100)
 
 /obj/item/clothing/suit/armor/heavy
 	name = "heavy armor"
