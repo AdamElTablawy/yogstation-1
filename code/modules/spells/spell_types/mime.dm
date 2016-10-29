@@ -27,7 +27,7 @@
 	..()
 
 
-/obj/effect/proc_holder/spell/targeted/mime/speak
+// /obj/effect/proc_holder/spell/targeted/mime/speak
 	name = "Speech"
 	desc = "Make or break a vow of silence."
 	school = "mime"
@@ -41,7 +41,7 @@
 	action_icon_state = "mime"
 	action_background_icon_state = "bg_mime"
 
-/obj/effect/proc_holder/spell/targeted/mime/speak/Click()
+// /obj/effect/proc_holder/spell/targeted/mime/speak/Click()
 	if(!usr)
 		return
 	if(!ishuman(usr))
@@ -53,7 +53,7 @@
 		still_recharging_msg = "<span class='warning'>You'll have to wait before you can give your vow of silence again!</span>"
 	..()
 
-/obj/effect/proc_holder/spell/targeted/mime/speak/cast(list/targets,mob/user = usr)
+// /obj/effect/proc_holder/spell/targeted/mime/speak/cast(list/targets,mob/user = usr)
 	for(var/mob/living/carbon/human/H in targets)
 		H.mind.miming=!H.mind.miming
 		if(H.mind.miming)
