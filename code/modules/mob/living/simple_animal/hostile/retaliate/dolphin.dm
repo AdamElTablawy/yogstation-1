@@ -32,7 +32,7 @@
 	minbodytemp = 0
 	maxbodytemp = 1500
 
-	faction = list("carp", "dolphin")//why do carps not attack dolphins again?
+	faction = list("dolphin")//why do carps not attack dolphins again? //i dunno now they do
 	flying = 1
 
 /mob/living/simple_animal/hostile/retaliate/dolphin/Process_Spacemove(movement_dir = 0)
