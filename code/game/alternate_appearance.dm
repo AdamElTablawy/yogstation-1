@@ -36,7 +36,7 @@
 
 /*
 	Hides the alternate_appearance
-	hideFrom - optional list of MOBS to hide it from the list's mobs specifically
+	hideFrom - optional list of MOBS to hide it from the list's mobs specifically 
 */
 /datum/alternate_appearance/proc/hide(list/hideFrom)
 	var/list/hiding = viewers
