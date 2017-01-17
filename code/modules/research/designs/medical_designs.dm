@@ -306,3 +306,54 @@
 	materials = list(MAT_METAL = 1000, MAT_GLASS = 500, MAT_GOLD = 500, MAT_URANIUM = 600, MAT_DIAMOND = 600)
 	build_path = /obj/item/weapon/implantcase/adrenaline
 	category = list("Medical Designs")
+	
+/datum/design/laserscalpel
+	name = "Laser Scalpel"
+	desc = "A Scalpel, with a laser attached. SCIENCE!"
+	ID = "laserscalpel"
+	req_tech = list("biotech" = 3, "magnets" = 2)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
+	build_path = /obj/item/weapon/scalpel/laserscalpel
+	category = list("Medical Designs")
+	
+/datum/design/ultralaserscalpel
+	name = "Ultra Laser Scalpel"
+	desc = "A scalpel, with an even stronger laser attached. SCIENCE!"
+	ID = "ultralaserscalpel"
+	req_tech = list("biotech" = 3, "magnets" = 4)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 500, MAT_GLASS = 500, MAT_URANIUM = 50)
+	build_path = /obj/item/weapon/scalpel/ultralaserscalpel
+	category = list("Medical Designs")
+	
+/datum/design/lasersaw
+	name = "Laser Saw"
+	desc = "A saw, with a laser blade attached. SCIENCE!"
+	ID = "lasersaw"
+	req_tech = list("biotech" = 3, "magnets" = 2)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
+	build_path = /obj/item/weapon/circular_saw/lasersaw
+	category = list("Medical Designs")
+
+/datum/design/ultralasersaw
+	name = "Ultra Laser Saw"
+	desc = "A saw, with an even stronger laser blade attached. SCIENCE!"
+	ID = "ultralasersaw"
+	req_tech = list("biotech" = 3, "magnets" = 4)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 500, MAT_GLASS = 500, MAT_URANIUM = 50)
+	build_path = /obj/item/weapon/circular_saw/ultralasersaw
+	category = list("Medical Designs")
+
+/datum/design/omnitool_surgery
+	name = "Surgical Omnitool"
+	desc = "The ultimate in medical development, this handy dandy tool does all the steps for you. Neat!"
+	ID = "omnitool_surgery"
+	req_tech = list("biotech" = 5, "magnets" = 4, "plasma" = 3)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 1000, MAT_GLASS = 1000, MAT_PLASMA = 1000, MAT_URANIUM = 500)
+	build_path /obj/item/weapon/surgical_omnitool
+
+
